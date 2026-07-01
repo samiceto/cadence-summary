@@ -1,0 +1,7 @@
+# Tasks — Part 10: Quality Standards (Cadence)
+
+- **[~] T10.1 Unit + integration suites** — State machine, reconciliation, consent, connectors, webhooks. Priority: P0. Estimate: 3d. Dependencies: T4.3, T8.3. DoD: coverage on core logic; CI green. → 35+ unit tests across packages + DB-gated RLS/sync integration tests (CI). **Remaining:** broaden integration coverage (reconciliation, webhook handlers).
+- **T10.2 e2e + contract tests** — Onboard→sync→sequence→pay→reconcile; provider contracts. Priority: P0. Estimate: 2d. Dependencies: T4.5. DoD: e2e passes; contract tests per provider.
+- **[~] T10.3 AI eval gates** — Golden-set tone/intent/draft/negotiation evals in CI. Priority: P0. Estimate: 1.5d. Dependencies: T6.5. DoD: CI blocks on regression. → tone-safety eval + reply-intent heuristic tests gate CI. **Remaining:** golden-set intent accuracy + negotiation-policy evals.
+- **[x] T10.4 Deliverability monitor + auto-pause** — Track bounce/complaint/unsub; auto-pause domain. Priority: P0. Estimate: 1.5d. Dependencies: T4.4. DoD: breach auto-pauses + alerts. → `@cadence/domain` `handleDeliveryEvent` (suppress on bounce/complaint; auto-pause sequences when bad-rate > 5%) + Resend webhook `POST /webhooks/resend/:tenantId`.
+- **T10.5 Dashboards + alerting + DR drill** — Ops dashboards, alerts, recovery drill. Priority: P1. Estimate: 1.5d. Dependencies: T5.5. DoD: alerts fire; RPO/RTO validated.

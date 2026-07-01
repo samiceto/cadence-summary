@@ -1,0 +1,6 @@
+# Tasks — Part 2: Customer Profile (Cadence)
+
+- **[x] T2.1 Onboarding wizard** — Capture business type, AR volume, billing model, vertical, geo. Priority: P0. Estimate: 2d. Dependencies: T5.2, T7.1. DoD: profile saved; drives defaults; <10 min TTV. → `@cadence/domain` `completeOnboarding` (saves profile + applies vertical preset) + `POST /onboarding`. (Wizard UI is the remaining frontend piece.)
+- **[x] T2.2 Vertical default presets** — Cadence/tone/channel presets per vertical. Priority: P1. Estimate: 1.5d. Dependencies: T4.4, T6.2. DoD: selecting vertical loads preset sequence. → `presets.ts` wholesale/services/default presets + `presetForVertical` mapping.
+- **[x] T2.3 Partner multi-tenant switcher** — Accountant manages multiple client tenants. Priority: P1. Estimate: 2d. Dependencies: T7.1. DoD: switch tenants without re-auth; RLS enforced. → migration `0003` (self-scoped membership/tenant RLS) + `withUser` + `GET /me/tenants`; switch via `x-cadence-tenant` header.
+- **[x] T2.4 Fit/anti-persona check** — Flag poor-fit (consumer/cash-only) at onboarding. Priority: P2. Estimate: 0.5d. Dependencies: T2.1. DoD: warning shown for anti-personas. → `assessFit` (B2C/cash-only → poor) + `POST /onboarding/assess`.

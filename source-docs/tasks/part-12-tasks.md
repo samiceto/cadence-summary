@@ -1,0 +1,7 @@
+# Tasks — Part 12: Success Metrics (Cadence)
+
+- **[x] T12.1 Event taxonomy + instrumentation** — Define + emit product/finance events. Priority: P0. Estimate: 1.5d. Dependencies: T5.5. DoD: events flowing to PostHog/warehouse. → `@cadence/metrics` `events.ts` (`EVENTS` taxonomy + `track()` over the PostHog seam).
+- **[x] T12.2 North-star dashboard** — Recovered cash + DSO per tenant. Priority: P0. Estimate: 1.5d. Dependencies: T12.1, T8.3. DoD: accurate from reconciled data. → `computeNorthStar` (recovered cash + DSO trend, null for no-history) + `GET /metrics/north-star`. Validated live on Neon ($4,200 recovered).
+- **[~] T12.3 Business/cohort dashboards** — MRR/ARR, ACV, NRR, margin, CAC payback, retention. Priority: P1. Estimate: 2d. Dependencies: T12.1, T3.1. DoD: dashboards live. → per-tenant `tenantBilling` (MRR/ARR). **Remaining:** platform-wide MRR/NRR/cohort rollups (warehouse).
+- **[x] T12.4 Monthly tenant report** — Automated "cash recovered" report. Priority: P1. Estimate: 1d. Dependencies: T12.2. DoD: report generated + delivered monthly. → `generateMonthlyReport` + `GET /metrics/report`. (Scheduled delivery = cron wiring.)
+- **[x] T12.5 Lift/control measurement** — Holdout-based collection lift. Priority: P1. Estimate: 1.5d. Dependencies: T12.1. DoD: lift vs control reported (>15% target). → deterministic `isHoldout` (~10%) + `computeLift` + `GET /metrics/lift`. Validated live on Neon.

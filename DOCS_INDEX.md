@@ -1,0 +1,123 @@
+# Source Docs Index
+
+Mirrored documentation files from private repository `cadence`.
+
+## Included Files
+
+- `.claude/commands/sp.adr.md`
+- `.claude/commands/sp.analyze.md`
+- `.claude/commands/sp.checklist.md`
+- `.claude/commands/sp.clarify.md`
+- `.claude/commands/sp.constitution.md`
+- `.claude/commands/sp.git.commit_pr.md`
+- `.claude/commands/sp.implement.md`
+- `.claude/commands/sp.phr.md`
+- `.claude/commands/sp.plan.md`
+- `.claude/commands/sp.specify.md`
+- `.claude/commands/sp.tasks.md`
+- `.claude/commands/sp.taskstoissues.md`
+- `.specify/memory/constitution.md`
+- `.specify/templates/adr-template.md`
+- `.specify/templates/agent-file-template.md`
+- `.specify/templates/checklist-template.md`
+- `.specify/templates/phr-template.prompt.md`
+- `.specify/templates/plan-template.md`
+- `.specify/templates/spec-template.md`
+- `.specify/templates/tasks-template.md`
+- `CLAUDE.md`
+- `PROJECT-SUMMARY.md`
+- `README.md`
+- `REMAINING.md`
+- `SPECIFYPLUS-FINDINGS.md`
+- `budget.md`
+- `constitution/part-1.md`
+- `constitution/part-10.md`
+- `constitution/part-11.md`
+- `constitution/part-12.md`
+- `constitution/part-2.md`
+- `constitution/part-3.md`
+- `constitution/part-4.md`
+- `constitution/part-5.md`
+- `constitution/part-6.md`
+- `constitution/part-7.md`
+- `constitution/part-8.md`
+- `constitution/part-9.md`
+- `content/README.md`
+- `content/benchmarks.md`
+- `content/blog/ar-collections-automation-guide.md`
+- `content/blog/what-is-dso-and-how-to-reduce-it.md`
+- `docs/integrations/connect-quickbooks-later.md`
+- `docs/integrations/marketplace-submission.md`
+- `docs/runbooks/README.md`
+- `docs/runbooks/alerting.md`
+- `docs/runbooks/deployment.md`
+- `docs/runbooks/disaster-recovery.md`
+- `docs/runbooks/incident-response.md`
+- `history/prompts/general/0009-complete-remaining-code-tracks.general.prompt.md`
+- `history/prompts/general/0010-test-eval-coverage-expansion.general.prompt.md`
+- `history/prompts/general/0011-fix-environment-warnings.general.prompt.md`
+- `history/prompts/general/0012-non-docker-growth-tracks.general.prompt.md`
+- `history/prompts/general/0013-gbm-risk-pipeline-synthetic.general.prompt.md`
+- `history/prompts/general/0014-real-data-loader-and-hot-path-indexes.general.prompt.md`
+- `history/prompts/general/0015-ops-infra-monitoring-content.general.prompt.md`
+- `history/prompts/general/0016-disconnect-endpoint-web-typecheck.general.prompt.md`
+- `history/prompts/general/0017-operator-ui-invoices-activity-connect.general.prompt.md`
+- `history/prompts/general/0018-mobile-responsive-web-ui.general.prompt.md`
+- `history/prompts/general/0019-portfolio-detail-ui-surfaces.general.prompt.md`
+- `history/prompts/part-12-success-metrics/0006-metrics-dashboard-onboarding.green.prompt.md`
+- `history/prompts/part-3-business-model/0005-webhooks-and-billing.green.prompt.md`
+- `history/prompts/part-4-product/0002-openai-switch-stripe-sync-slice.green.prompt.md`
+- `history/prompts/part-4-product/0004-money-path-inbound-loop.green.prompt.md`
+- `history/prompts/part-5-architecture/0001-foundation-monorepo-rls.green.prompt.md`
+- `history/prompts/part-7-security/0003-auth-vault-policy-scoring-sequences.green.prompt.md`
+- `history/prompts/part-7-security/0007-audit-erasure-refunds-tone-deliverability.green.prompt.md`
+- `history/prompts/part-9-scalability/0008-roi-negotiation-plans-throttle-ratelimit.green.prompt.md`
+- `how_to_integrate.md`
+- `load-test/README.md`
+- `monitoring/README.md`
+- `plans/part-1-plan.md`
+- `plans/part-10-plan.md`
+- `plans/part-11-plan.md`
+- `plans/part-12-plan.md`
+- `plans/part-2-plan.md`
+- `plans/part-3-plan.md`
+- `plans/part-4-plan.md`
+- `plans/part-5-plan.md`
+- `plans/part-6-plan.md`
+- `plans/part-7-plan.md`
+- `plans/part-8-plan.md`
+- `plans/part-9-plan.md`
+- `portfolio_detail.md`
+- `specs/spec-part-1.md`
+- `specs/spec-part-10.md`
+- `specs/spec-part-11.md`
+- `specs/spec-part-12.md`
+- `specs/spec-part-2.md`
+- `specs/spec-part-3.md`
+- `specs/spec-part-4.md`
+- `specs/spec-part-5.md`
+- `specs/spec-part-6.md`
+- `specs/spec-part-7.md`
+- `specs/spec-part-8.md`
+- `specs/spec-part-9.md`
+- `tasks/part-1-tasks.md`
+- `tasks/part-10-tasks.md`
+- `tasks/part-11-tasks.md`
+- `tasks/part-12-tasks.md`
+- `tasks/part-2-tasks.md`
+- `tasks/part-3-tasks.md`
+- `tasks/part-4-tasks.md`
+- `tasks/part-5-tasks.md`
+- `tasks/part-6-tasks.md`
+- `tasks/part-7-tasks.md`
+- `tasks/part-8-tasks.md`
+- `tasks/part-9-tasks.md`
+
+## Exclusion Rules
+
+- Code files are not mirrored
+- Files matching secret-like patterns are excluded
+
+## Skipped Files
+
+- `.claude/commands/sp.reverse-engineer.md`: secret-pattern-detected
